@@ -40,14 +40,14 @@ We will be using all 78,184 observations in our dataset and approximately 6 inpu
 
 **What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**
 
-- Recalling firm name  		      object
-- Product Type                          object
-- Product Classification                object
-- Status                                object
-- Recalling Firm City                   object
-- Recalling Firm State                  object
-- Recalling Firm Country                object
-- Center Classification Date            datetime
+- Recalling firm name  	-	      object
+- Product Type          -                object
+- Product Classification   -             object
+- Status                  -              object
+- Recalling Firm City      -             object
+- Recalling Firm State      -            object
+- Recalling Firm Country     -           object
+- Center Classification Date  -          datetime
 
 Target variable is Event Classification (Object) which classifies the recalls into classes severity (Class I, Class II, Class III)
 
