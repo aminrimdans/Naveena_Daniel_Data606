@@ -23,16 +23,16 @@
 
 **Where do you get the data to analyze and help answer your questions (credibility of source, quality of data, size of data, attributes of data. etc.)?**
 
-Our data is publicly available on the FDA website and is updated yearly to reflect the most recent records. 
-The dataset file is 12.5 MB with a shape of (78184, 17). The dataset has high veracity as only 1 out of 78184 rows has a null entry. 
+- Our data is publicly available on the FDA website and is updated yearly to reflect the most recent records. 
+- The dataset file is 12.5 MB with a shape of (78184, 17). The dataset has high veracity as only 1 out of 78184 rows has a null entry. 
 The column (Distribution Pattern) with the null entry is also not being utilized due to its inapplicability to our analysis.
 
 **What will be your unit of analysis (for example, patient, organization, or country)?**
 
 Our unit of analysis will be the severity of the impact of recalls which is measured in classes (Class I, II, III).
-Class I - Product that could cause death or serious health problems.
-Class II - Product that could cause temporary health issues and slight threat of a serious nature. 
-Class III - Product that is less likely to cause adverse health issues but violates manufacturing laws of FDA. 
+- Class I - Product that could cause death or serious health problems.
+- Class II - Product that could cause temporary health issues and slight threat of a serious nature. 
+- Class III - Product that is less likely to cause adverse health issues but violates manufacturing laws of FDA. 
 
 **Roughly how many units (observations) do you expect to analyze?**
 
