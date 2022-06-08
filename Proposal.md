@@ -1,6 +1,6 @@
-   **Capstone Proposal Draft 
-Daniel Rimdans
-Moulya Naveena Choday**
+# Capstone Proposal Draft 
+## Daniel Rimdans
+## Moulya Naveena Choday
 
 **What is your issue of interest (provide sufficient background information)?**
 The United States Food and Drug Administration (FDA) is a Federal agency of the Department of Health and Human Services which ensures safety and security of human and veterinary food supplies, drugs and medical devices, etc. 
