@@ -59,7 +59,7 @@ Target variable is Event Classification (Object) which classifies the recalls in
 	
 **How do you plan to develop/apply ML and how do you evaluate/compare the performance of the models?**
 
-We plan to apply our ML algorithms using RandomizedSearchCV with cross-validation. Model performance evaluation will be done using accuracy score.
+- We plan to apply our ML algorithms using RandomizedSearchCV with cross-validation and Model performance evaluation will be done using accuracy score.
 
 **What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practical applications, etc)?**
 
