@@ -13,7 +13,7 @@
 
 **What questions do you have in mind and would like to answer?**
 
-- What is being recalled and who is the manufacturing firm?
+- What is being recalled more frequently and who is the manufacturing firm?
 - How many recalls does each firm have?
 - What is the severity of the reason for recall (Class I, II, III)?
 - Which product type has more recalls? 
@@ -75,3 +75,4 @@ We want to create a practical model to assist in regulatory decisions through an
 
 ### References
 - U.S. Food & Drug Administration. (n.d.). FDA Dashboards—Recalls. Compliance Dashboards. Retrieved June 12, 2022, from https://datadashboard.fda.gov/ora/cd/recalls.htm
+- Wikimedia Foundation. (2022, May 11). Food and Drug Administration. Wikipedia. Retrieved June 12, 2022, from https://en.wikipedia.org/wiki/Food_and_Drug_Administration 
