@@ -5,3 +5,4 @@ numpy==1.21.4
 matplotlib 
 nltk
 scikit_learn==0.24.0
+openpyxl
