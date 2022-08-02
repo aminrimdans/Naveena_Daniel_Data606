@@ -26,7 +26,7 @@ model_training = st.container()
 with header:
 	st.title('FDA Recalls Project')
 
-	st.image('data/FDA_recalls.png')
+	st.image('FDA_recalls.png')
 
 with dataset:
 	st.header('Recalls Dataset')
