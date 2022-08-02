@@ -31,7 +31,7 @@ with header:
 with dataset:
 	st.header('Recalls Dataset')
 
-	recalls_data = pd.read_excel('data/Recalls.xlsx')
+	recalls_data = pd.read_excel('Recalls.xlsx')
 	display_data = st.checkbox("See the first five recall data")
 if display_data:
     st.write(recalls_data.head())
