@@ -35,13 +35,9 @@ if display_data:
     st.write(recalls_data.head())
 
 with features:
-	st.header('Parameters from Reason for Recall Text Column')
-
-	st.subheader('Target variable with encoding')
 	recalls_data['Event Classification'] = recalls_data['Event Classification'].astype('category')
 	lol = recalls_data['Event Classification'].astype('category')
 	recalls_data['Event_indexed']=lol.cat.codes
-	st.write(recalls_data['Event_indexed'].head())
 	recalls_data['Reason for Recall'] = recalls_data['Reason for Recall'].apply(str.lower)
 	recalls_data['alpha check'] = recalls_data['Reason for Recall'].str.isalpha()
 	stopwords = stopwords.words('english')
@@ -94,7 +90,7 @@ with model_training:
 	def select_model(model_list):
 		if 'Random Forest Classifier' in model_list:
 
-			st.header('ML model training using recalls dataset')
+			st.header('Selected ML model using recalls dataset')
 			st.subheader('Random Forest Classifier')
 			st.subheader('* **Parameter 1:** N_estimators')
 			n_estimators = st.slider('Please choose the number of trees in the random forest classification model',min_value=10, max_value=120, value=20, step=10)
