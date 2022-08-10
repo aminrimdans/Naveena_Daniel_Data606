@@ -109,6 +109,7 @@ with model_training:
 			display_pred(prediction,y_test)	
 
 		if 'Logistic Regression' in model_list:
+			
 			st.subheader('Logistic Regression')
 			lr = LogisticRegression(max_iter=30000)
 			lr.fit(x_train,y_train)
@@ -120,6 +121,7 @@ with model_training:
 			display_pred(prediction,y_test)
 
 		if 'K-Nearest Neighbor' in model_list:
+			
 			st.subheader('K-Nearest Neighbor')
 			knn = KNeighborsClassifier()
 			knn.fit(x_train,y_train)
