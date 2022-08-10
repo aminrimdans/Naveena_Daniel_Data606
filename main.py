@@ -25,7 +25,7 @@ with header:
 	st.title('FDA Recalls Project')
 
 	st.image('FDA_recalls.png')
-@st.cache
+
 def dataset(data):
 	st.header('Recalls Dataset')
 	recalls_data = pd.read_excel(data)
