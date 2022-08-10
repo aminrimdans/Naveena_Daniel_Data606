@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import mean_absolute_error as mae
 from sklearn.metrics import mean_squared_error as mse
 from sklearn.metrics import r2_score
@@ -21,6 +23,8 @@ dataset = st.container()
 features = st.container()
 model_training = st.container()
 
+
+
 with header:
 	st.title('FDA Recalls Project')
 
@@ -28,17 +32,25 @@ with header:
 
 with dataset:
 	st.header('Recalls Dataset')
-	recalls_data = pd.read_excel('Recalls.xlsx')
+
+	recalls_data = pd.read_excel('data/Recalls.xlsx')
 	display_data = st.checkbox("See the first five recall data")
-	if display_data:
-    		st.write(recalls_data.head())
+if display_data:
+    st.write(recalls_data.head())
+
+
 
 
 with features:
-	st.subheader('Preparation of features')			     
+	st.header('Parameters from Reason for Recall Text Column')
+
+	st.subheader('Target variable with encoding')
 	recalls_data['Event Classification'] = recalls_data['Event Classification'].astype('category')
 	lol = recalls_data['Event Classification'].astype('category')
 	recalls_data['Event_indexed']=lol.cat.codes
+	st.write(recalls_data['Event_indexed'].head())
+
+
 	recalls_data['Reason for Recall'] = recalls_data['Reason for Recall'].apply(str.lower)
 	recalls_data['alpha check'] = recalls_data['Reason for Recall'].str.isalpha()
 	stopwords = stopwords.words('english')
@@ -55,7 +67,9 @@ with features:
 
 	original = vec_input(recalls_data['Reason for Recall'])
 
+
 with model_training:
+
 	y = recalls_data['Event_indexed']
 	x = original
 	x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=.2, random_state=45)
@@ -91,7 +105,7 @@ with model_training:
 	def select_model(model_list):
 		if 'Random Forest Classifier' in model_list:
 
-			st.header('Selected ML model using recalls dataset')
+			st.header('ML model training using recalls dataset')
 			st.subheader('Random Forest Classifier')
 			st.subheader('* **Parameter 1:** N_estimators')
 			n_estimators = st.slider('Please choose the number of trees in the random forest classification model',min_value=10, max_value=120, value=20, step=10)
@@ -106,10 +120,12 @@ with model_training:
 			st.write(accuracy_score(y_test, prediction))
 			plot_cfmatrix(prediction,y_test)
 			st.header('Random sample for Recall classification based on Random Forest Classifier model')
-			display_pred(prediction,y_test)	
+			display_pred(prediction,y_test)
+
+			
+			
 
 		if 'Logistic Regression' in model_list:
-			
 			st.subheader('Logistic Regression')
 			lr = LogisticRegression(max_iter=30000)
 			lr.fit(x_train,y_train)
@@ -120,8 +136,10 @@ with model_training:
 			st.header('Random sample for Recall classification based on logistic regression model')
 			display_pred(prediction,y_test)
 
+
+
+
 		if 'K-Nearest Neighbor' in model_list:
-			
 			st.subheader('K-Nearest Neighbor')
 			knn = KNeighborsClassifier()
 			knn.fit(x_train,y_train)
@@ -135,6 +153,9 @@ with model_training:
 
 
 select_model(mlmodel)
+
+
+
 
 
 
