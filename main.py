@@ -26,16 +26,16 @@ with header:
 
 	st.image('FDA_recalls.png')
 
-def dataset(data):
+with dataset:
 	st.header('Recalls Dataset')
-	recalls_data = pd.read_excel(data)
+	recalls_data = pd.read_excel('Recalls.xlsx)
 	display_data = st.checkbox("See the first five recall data")
 	if display_data:
     		st.write(recalls_data.head())
-dataset('Recalls.xlsx')
 
 
 with features:
+	st.subheader('Preparation of features')			     
 	recalls_data['Event Classification'] = recalls_data['Event Classification'].astype('category')
 	lol = recalls_data['Event Classification'].astype('category')
 	recalls_data['Event_indexed']=lol.cat.codes
