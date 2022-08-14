@@ -35,7 +35,7 @@ with header:
 	st.title('FDA Recalls Project')
 
 	st.sidebar.image('FDA_recalls.png', width= 300)
-	#st.sidebar.image("FDA_recalls.png")
+	#st.sidebar.image("Streamlit/FDA_recalls.png")
 
 with dataset:
 	st.header('Recalls Dataset')
