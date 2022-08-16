@@ -99,6 +99,12 @@ with model_training:
 
 		output_df = new_df.sample()
 		st.write("Reason for Recall:",output_df['Reason for Recall'],"\n Predicted Class:",output_df['Predicted Class'])
+		if output_df['Predicted Class'] == 0:
+			st.subheader('Class I')
+		if output_df['Predicted Class'] == 1:
+			st.subheader('Class II')
+		if output_df['Predicted Class'] == 2:
+			st.subheader('Class III')
 
 	mlmodel = st.sidebar.multiselect("Choose the model :", ('Logistic Regression', 'K-Nearest Neighbor', 'Random Forest Classifier'))
 
