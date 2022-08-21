@@ -2,7 +2,8 @@
 
 ## By Daniel Rimdans and Moulya Naveena Choday
 
-![Alt text](/Users/moulyanaveenachoday/Desktop/2 recalls.JPEG "Optional title")
+<img width="678" alt="Screen Shot 2022-08-17 at 11 53 54 AM" src="https://user-images.githubusercontent.com/106713975/185771280-cd506ad2-b102-40e2-9f32-4537372e56df.png">
+
 
 ###### Link to the Presentation 
 [Presentation](https://github.com/NaveenaChodayy/TEAM_E_Data606/blob/main/PPT/Capstone%20Presentation%20(1).pdf)
