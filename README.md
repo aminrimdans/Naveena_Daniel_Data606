@@ -5,7 +5,7 @@
 
 ###### Below are the links
 
-[Final Report](https://github.com/NaveenaChodayy/TEAM_E_Data606/tree/main/Report)
+[Final Report](https://github.com/NaveenaChodayy/TEAM_E_Data606/tree/main/Final_Report)
 
 [Youtube Video](https://www.youtube.com/watch?v=5kZn5iI_B6A)
 
