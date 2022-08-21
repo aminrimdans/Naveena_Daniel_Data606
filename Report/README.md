@@ -116,37 +116,25 @@ Since the accuracy is more with trail II, we predicted the recalls classificatio
 
 Created a simple web application using Streamlit which is an open-source framework for deploying Machine Learning models and projects with the help of python programming language. 
 
- 
+The first five records of the dataset are displayed if the user clicks the check box.
 
- 
-
-The first five records of the dataset are displayed if the user clicks the check box. 
-
- 
+<img width="1283" alt="Screen Shot 2022-08-20 at 7 27 48 PM" src="https://user-images.githubusercontent.com/106713975/185771476-a94b5072-7cb1-4db7-a2c1-923361b3f59a.png"> 
 
 Users can choose the preferred model from the drop-down among three models used in the project. 
 
- 
-
- 
-
- 
-
- 
+ <img width="336" alt="Screen Shot 2022-08-20 at 7 28 03 PM" src="https://user-images.githubusercontent.com/106713975/185771481-eb35e3a3-0ca5-4cc5-a010-df99bd01293c.png">
 
 Users can also select different parameters for the model based on the preferences. 
 
- 
+<img width="1267" alt="Screen Shot 2022-08-20 at 7 32 13 PM" src="https://user-images.githubusercontent.com/106713975/185771499-54a72977-9ba5-4aeb-9c73-7d3bc50bfc15.png">
 
 Metrics such as accuracy score and confusion matrix to display the true vs predicted values are shown for each model. 
 
- 
-
- 
+<img width="1253" alt="Screen Shot 2022-08-20 at 7 33 30 PM" src="https://user-images.githubusercontent.com/106713975/185771504-dd224284-19e4-4e1d-bdb9-6d7dfeed3ef3.png">
 
 A random sample from the input data set is taken and predicted class of recall classification is shown based on the model chosen. 
 
- 
+<img width="1213" alt="Screen Shot 2022-08-20 at 7 33 50 PM" src="https://user-images.githubusercontent.com/106713975/185771513-8100e5d7-50e4-4133-80f0-cec9463453b3.png">
 
 ### References:  
 
