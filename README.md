@@ -1,8 +1,8 @@
 # CLASSIFICATION OF FDA RECALLS - TEAM E
 
-_**## By Daniel Rimdans and Moulya Naveena Choday **_
+## By Daniel Rimdans and Moulya Naveena Choday
 
-**###### Food and Drug Administration and Recalls **
+###### Food and Drug Administration and Recalls 
 
 The Food and Drug Administration (FDA) in United States is a government organization of the Department of Health and Human Services. The major responsibility of FDA is to secure and advance public health safety through the control and management of food handling. FDA primarily focuses on food, drugs and cosmetics but also involves other product types such as medical devices, tools, lasers, animal food and veterinary products. 
 
@@ -13,11 +13,11 @@ Class I – Recalls that might cause severe injury or death.
 Class II – Recalls that might cause severe injury or temporary illness. 
 Class III – Recalls that violate FDA rules but less likely to cause injury or illness. 
 
-**###### Data **  
+###### Data 
 
 Data is collected from the FDA website that is publicly available and is updated yearly to provide the most recent records. The dataset file is 12.5 MB with a shape of (78184, 17). The dataset has high veracity as only 1 out of 78184 rows has a null entry. The column (Distribution Pattern) with the null entry is also not being utilized due to its inapplicability to our analysis. 
 
-_**###### Data Description  **_
+###### Data Description 
 
 Recalling firm name - categorical 
 Product Type - categorical 
@@ -26,7 +26,7 @@ Reason for Recall - text
 Product Description - text 
 Event Classification - categorical 
 
-_**###### Questions/ Hypothesis **_
+###### Questions/ Hypothesis 
 
 - What is being recalled more frequently and who is the manufacturing firm? 
 - How many recalls does each firm have? 
@@ -36,11 +36,11 @@ _**###### Questions/ Hypothesis **_
 - Which country has the highest recalled products? 
 - Can we predict which firms are more likely to incur recalls? 
 
-_**###### Exploratory Data Analysis**_
+###### Exploratory Data Analysis
 
 Imported required libraries and created a data frame by reading the excel file using pandas. Performed steps to clean the data. Checked for the null values and removed the single record from the dataset as there is only one null value in the whole dataset. Encoded the target variable to numerical values (1, 2, 3) as the type of target variable is category (Class I, Class II, Class III) respectively. Used One Hot Encoding technique to transform categorical columns product type and recalling firm country to numerical data types.  
 
-_**Insights from data after performing EDA  **_
+**Insights from data after performing EDA  **
 
 Exploratory Data Analysis is performed using SAS Viya and Python. 
 Below are the visualizations using SAS Viya.  
@@ -74,7 +74,7 @@ Above bar plot shows the classification of recalls for all the product types. Th
 
 Among all the products that are recalled, United States has a greater number of recalled products which is around 97 percentage and remaining 3 percentage is other countries.	 
 
-_**###### Natural Language Processing (NLP) – Vectorization **_
+###### Natural Language Processing (NLP) – Vectorization
 
 Reason for recall text column is cleaned by checking for stop words (frequently used words in English that are unimportant such as a, an, the) and removed them, replaced digits with alphabetic words, converted all the text into lower case and the text column is changed into numeric type by using count vectorization function from Scikit Learn library resulting in 22730 columns/features. 
 
@@ -110,11 +110,11 @@ Tfidfvectorizer in scikit learn library which is like count vectorizer provides 
 
  
 
-_**###### Machine Learning Models  **_
+###### Machine Learning Models  
 
 Various Machine Learning models were executed to predict the class classification of reason for recall. Logistic Regression, Random Forest Classifier and K-Nearest Neighbor are the most accurate models among all other models.  
 
-**_Logistic Regression: _**
+_**Logistic Regression:**_
 Machine Learning algorithm which is same as linear regression but uses more complex cost function and uses predictive analysis algorithm based on the concept of probability.  
 
 **_Random Forest Classifier: _**
@@ -123,7 +123,7 @@ Random Forest is a Supervised Machine Learning Algorithm that is utilized broadl
 **_K-Nearest Neighbor: _**
 K-Nearest Neighbor is a supervised learning classification algorithm which uses closeness to make classifications about the group of an individual data point. It is also called KNN.  
 
-_**###### Trail I –  **_
+###### Trail I – 
 
 - Performed the One Hot Encoding technique on columns of Product Type and Recalling Firm Country.  
 - Used those two columns' data to fit the three models and predict the results.  
@@ -135,7 +135,7 @@ _**###### Trail I –  **_
 
  
 
-_**###### Trail II –  **_
+###### Trail II –  
 
 - Performed Natural Language Processing technique on the text column (Reason for Recalls)  
 - Used the text column after NLP vectorization as input to feed the models and predict the results. 
@@ -147,7 +147,7 @@ _**###### Trail II –  **_
 
 Since the accuracy is more with trail II, we predicted the recalls classification using NLP techniques for the Machine Learning models. 
 
-_**###### Model Deployment  **_
+###### Model Deployment  
 
 Created a simple web application using Streamlit which is an open-source framework for deploying Machine Learning models and projects with the help of python programming language. 
 
@@ -183,9 +183,9 @@ A random sample from the input data set is taken and predicted class of recall c
 
  
 
-_**###### References:  **_
+###### References:  
 
-https://en.wikipedia.org/wiki/Food_and_Drug_Administration 
-https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148 
-https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/ 
-https://streamlit.io/ 
+- https://en.wikipedia.org/wiki/Food_and_Drug_Administration 
+- https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148 
+- https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/ 
+- https://streamlit.io/ 
