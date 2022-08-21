@@ -2,6 +2,12 @@
 
 ## By Daniel Rimdans and Moulya Naveena Choday
 
+###### Link to the Presentation 
+[Presentation](https://github.com/NaveenaChodayy/TEAM_E_Data606/blob/main/PPT/Capstone%20Presentation%20(1).pdf)
+
+###### Link to the video
+[Video](https://www.youtube.com/watch?v=5kZn5iI_B6A)
+
 ### Food and Drug Administration and Recalls 
 
 The Food and Drug Administration (FDA) in United States is a government organization of the Department of Health and Human Services. The major responsibility of FDA is to secure and advance public health safety through the control and management of food handling. FDA primarily focuses on food, drugs and cosmetics but also involves other product types such as medical devices, tools, lasers, animal food and veterinary products. 
