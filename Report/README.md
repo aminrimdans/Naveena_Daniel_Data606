@@ -2,6 +2,8 @@
 
 ## By Daniel Rimdans and Moulya Naveena Choday
 
+![Alt text](/Users/moulyanaveenachoday/Desktop/2 recalls.JPEG "Optional title")
+
 ###### Link to the Presentation 
 [Presentation](https://github.com/NaveenaChodayy/TEAM_E_Data606/blob/main/PPT/Capstone%20Presentation%20(1).pdf)
 
