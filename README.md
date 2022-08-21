@@ -1,3 +1,5 @@
+### Capstone Repository with files organized into folders.
+
 # CLASSIFICATION OF FDA RECALLS - TEAM E
 #### By Daniel Rimdans and Moulya Naveena Choday 
 
