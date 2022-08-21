@@ -9,9 +9,9 @@ The Food and Drug Administration (FDA) in United States is a government organiza
 FDA recalls are the actions taken on the firm if there is any violation in the products. Recall can also be an intentional activity that happens on the grounds that manufacturers do their obligation to safeguard the general wellbeing and prosperity from items that present an act of injury or violations that might affect public health. Drug recall is the most effective method for safeguarding general society from a deficient or destructive item. 
 Recalls are classified into three categories.  
 
-Class I – Recalls that might cause severe injury or death. 
-Class II – Recalls that might cause severe injury or temporary illness. 
-Class III – Recalls that violate FDA rules but less likely to cause injury or illness. 
+- Class I – Recalls that might cause severe injury or death. 
+- Class II – Recalls that might cause severe injury or temporary illness. 
+- Class III – Recalls that violate FDA rules but less likely to cause injury or illness. 
 
 ### Data 
 
