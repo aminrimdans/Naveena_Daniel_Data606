@@ -53,13 +53,13 @@ Below are the visualizations using SAS Viya.
 
 #### Which product type has the highest recalls? 
 
-<img width="996" alt="Screen Shot 2022-08-17 at 11 54 07 AM" src="https://user-images.githubusercontent.com/106713975/185771298-d674d0ac-d423-4185-9a57-d03f7ebe73f1.png">
+![one_606](https://user-images.githubusercontent.com/106713975/185771556-25c40f05-ca77-4618-86cc-520c6da00d2d.png)
 
 From the figure, Pie chart displays the total records for the recalls and classification of the recalls where color red represents the most severe class and yellow represents the moderate severity and red represents less severity in the recalls. Displaying the recalls grouped by the product type, medical devices accounts for approximately 27,000 records is the highest among other product types such as food/cosmetics, Drugs, Veterinary, etc.  
 
 #### Which product type causes more severe (Class I & II & III) health impacts? 
 
-<img width="811" alt="Screen Shot 2022-08-20 at 9 21 42 PM" src="https://user-images.githubusercontent.com/106713975/185771387-07c52e12-5caa-4204-88d3-39373faed657.png">
+<img width="655" alt="two_606" src="https://user-images.githubusercontent.com/106713975/185771568-1aa4ecb3-2f7c-49c1-8f8a-1dc75e1d09fd.png">
 
 Above bar plot shows the classification of recalls for all the product types. The red color shows the recalls of class I which is severe. Food/Cosmetics has the highest frequency of recalls compared to the frequency of other product types.  
 
