@@ -2,9 +2,6 @@
 
 ## By Daniel Rimdans and Moulya Naveena Choday
 
-<img width="678" alt="Screen Shot 2022-08-17 at 11 53 54 AM" src="https://user-images.githubusercontent.com/106713975/185771280-cd506ad2-b102-40e2-9f32-4537372e56df.png">
-
-
 ###### Link to the Presentation 
 [Presentation](https://github.com/NaveenaChodayy/TEAM_E_Data606/blob/main/PPT/Capstone%20Presentation%20(1).pdf)
 
@@ -56,30 +53,19 @@ Below are the visualizations using SAS Viya.
 
 #### Which product type has the highest recalls? 
 
-
- 
+<img width="996" alt="Screen Shot 2022-08-17 at 11 54 07 AM" src="https://user-images.githubusercontent.com/106713975/185771298-d674d0ac-d423-4185-9a57-d03f7ebe73f1.png">
 
 From the figure, Pie chart displays the total records for the recalls and classification of the recalls where color red represents the most severe class and yellow represents the moderate severity and red represents less severity in the recalls. Displaying the recalls grouped by the product type, medical devices accounts for approximately 27,000 records is the highest among other product types such as food/cosmetics, Drugs, Veterinary, etc.  
 
 #### Which product type causes more severe (Class I & II & III) health impacts? 
 
- 
-
- 
-
- 
-
- 
-
- 
+<img width="811" alt="Screen Shot 2022-08-20 at 9 21 42 PM" src="https://user-images.githubusercontent.com/106713975/185771387-07c52e12-5caa-4204-88d3-39373faed657.png">
 
 Above bar plot shows the classification of recalls for all the product types. The red color shows the recalls of class I which is severe. Food/Cosmetics has the highest frequency of recalls compared to the frequency of other product types.  
 
 #### Which country has the highest recalled products? 
 
- 
-
- 
+ <img width="552" alt="Screen Shot 2022-08-17 at 12 08 44 PM" src="https://user-images.githubusercontent.com/106713975/185771328-9a7945e0-541e-45a9-8a08-73f0afd463de.png">
 
 Among all the products that are recalled, United States has a greater number of recalled products which is around 97 percentage and remaining 3 percentage is other countries.	 
 
@@ -87,37 +73,13 @@ Among all the products that are recalled, United States has a greater number of 
 
 Reason for recall text column is cleaned by checking for stop words (frequently used words in English that are unimportant such as a, an, the) and removed them, replaced digits with alphabetic words, converted all the text into lower case and the text column is changed into numeric type by using count vectorization function from Scikit Learn library resulting in 22730 columns/features. 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
  Based on the frequency of the words in the recalls text column, the top five key features are listed below. 
 
- 
-
- 
-
- 
+ ![Untitled 2](https://user-images.githubusercontent.com/106713975/185771340-24f6537b-fb3d-4c7f-8ac9-0cf47accc7e8.jpg)
 
 Tfidfvectorizer in scikit learn library which is like count vectorizer provides the importance of the words in the text column along with the frequency of the words. ‘Salmonella’ is the most important tokenized word in the Reason for Recalls column.  
 
- 
-
- 
-
- 
-
- 
+ ![Recall](https://user-images.githubusercontent.com/106713975/185771348-9e5a9091-0f44-4abc-b171-28434300f981.jpg)
 
 ### Machine Learning Models  
 
@@ -138,21 +100,15 @@ K-Nearest Neighbor is a supervised learning classification algorithm which uses 
 - Used those two columns' data to fit the three models and predict the results.  
 - Accuracy of the models  
 
+<img width="588" alt="Screen Shot 2022-08-20 at 9 24 31 PM" src="https://user-images.githubusercontent.com/106713975/185771445-d5b874f6-647f-4248-b1ed-6004c15403a1.png">
  
-
- 
-
- 
-
 #### Trail II –  
 
 - Performed Natural Language Processing technique on the text column (Reason for Recalls)  
 - Used the text column after NLP vectorization as input to feed the models and predict the results. 
 - Accuracy of the models  
 
- 
-
- 
+<img width="620" alt="Screen Shot 2022-08-20 at 9 25 10 PM" src="https://user-images.githubusercontent.com/106713975/185771453-a15ea63e-8dd2-4118-8a3e-dc7575eda07c.png">
 
 Since the accuracy is more with trail II, we predicted the recalls classification using NLP techniques for the Machine Learning models. 
 
